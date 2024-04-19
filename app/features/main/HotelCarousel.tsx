@@ -14,10 +14,10 @@ export default function HotelCarousel({ hotel }: any) {
     initial: 0,
     slides: {
       perView:
-        (width < 400 && 2.2) ||
-        (width > 400 && width < 1460 && 3.2) ||
+        (width < 400 && 1.2) ||
+        (width > 400 && width < 1460 && 2.2) ||
         (width > 1460 && width < 2050 && 3.2) ||
-        (width > 2050 && 5.2),
+        (width > 2050 && 4.2),
       spacing: 5,
     },
     slideChanged(slider) {
@@ -29,6 +29,7 @@ export default function HotelCarousel({ hotel }: any) {
   })
 
   console.log(currentSlide)
+  // console.log(instanceRef.current?.track.details.slides.length)
 
   return (
     <div className='py-5 border-b-2 flex flex-col gap-5'>
@@ -64,7 +65,7 @@ export default function HotelCarousel({ hotel }: any) {
                 disabled={
                   currentSlide ===
                     instanceRef.current.track.details.slides.length - 1 ||
-                  currentSlide === 2
+                  currentSlide === 3
                 }
               />
             </>
