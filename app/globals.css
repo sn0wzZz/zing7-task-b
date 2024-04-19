@@ -53,11 +53,11 @@ body {
     @apply text-lg font-light;
   }
   p {
-    @apply text-xl text-start;
+    @apply text-lg text-start;
   }
 
   th {
-    @apply bg-tableHead text-start;
+    @apply bg-tableHead text-textSecondary text-start;
   }
   td,
   th {

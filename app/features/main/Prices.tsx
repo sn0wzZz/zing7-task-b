@@ -1,29 +1,8 @@
 import SubHeading from '@/app/ui/SubHeading'
 import { formatCurrency } from '@/app/utils/helpers'
 import React from 'react'
+import {tableData} from '../../../public/data'
 
-const tableData = [
-  {
-    accomodation: '1 човек в двойна стая	',
-    price: 1149,
-  },
-  {
-    accomodation: 'Трети възрастен',
-    price: 1100,
-  },
-  {
-    accomodation: 'Единична стая',
-    price: 1548,
-  },
-  {
-    accomodation: 'Дете 2 -5.99 г. в стая с 2-ма възрастни',
-    price: 560,
-  },
-  {
-    accomodation: 'Дете 6 -11.99 г. в стая с 2-ма възрастни',
-    price: 728,
-  },
-]
 
 export default function Prices() {
   return (

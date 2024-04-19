@@ -59,7 +59,9 @@ export default function Hero() {
   })
 
   return (
-    <div className={`relative bg-[url('/hero.png')] bg-center bg-cover `}>
+    <div
+      className={`relative bg-[url('/hero.png')] bg-center bg-cover text-center `}
+    >
       <div className='w-full h-full flex  justify-center items-center backdrop-blur-md'>
         <div className='translate-y-16 '>
           {/* Title */}
@@ -68,11 +70,10 @@ export default function Hero() {
       gap-5 md:gap-7 lg:gap-10'
           >
             <div className='flex flex-col justify-center items-center lg:mt-10 gap-2 sm:gap-4 md:gap-6'>
-              <h1 className=' font-bold text-center'>Арабска приказка в Йордания</h1>
-              <h4 className=' border-white border-2 px-6 py-2 text-nowrap w-max'>
-                {' '}
+              <h1 className=' font-bold '>Арабска приказка в Йордания</h1>
+              <h5 className=' border-white border-2 px-6 py-2 text-nowrap w-max'>
                 {dateRange}
-              </h4>
+              </h5>
             </div>
 
             {/* Timer */}
@@ -90,14 +91,13 @@ export default function Hero() {
                 <h5>Резервирайте сега</h5>
               </a>
               <h6>{`от ${formatCurrency(price)}`}</h6>
-            {/* Tabs */}
-            <div className='grid grid-cols-2 sm:grid-cols-4  gap-2 mt-6'>
-              {tabs.map((tab, i) => (
-                <Tab key={i} tab={tab} />
-              ))}
+              {/* Tabs */}
+              <div className='grid grid-cols-2 sm:grid-cols-4  gap-2 mt-6'>
+                {tabs.map((tab, i) => (
+                  <Tab key={i} tab={tab} />
+                ))}
+              </div>
             </div>
-            </div>
-
           </div>
         </div>
       </div>

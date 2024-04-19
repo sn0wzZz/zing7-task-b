@@ -1,6 +1,4 @@
-
-
-export default function Timer({timeLeft}:any) {
+export default function Timer({ timeLeft }: any) {
   return (
     <div className='text-center flex justify-center'>
       <div className='flex gap-5 sm:gap-8 md:text-gap-10 lg:gap-16 xl:gap-20  justify-between'>
