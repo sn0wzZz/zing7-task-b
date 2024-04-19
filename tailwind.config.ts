@@ -32,6 +32,10 @@ const config: Config = {
         textPrimary: '#4e4e4e',
         textSecondary: '#b4b4b4',
       },
+      screens: {
+        tablet: '1101px',
+        xs: '450px',
+      },
     },
   },
   plugins: [],

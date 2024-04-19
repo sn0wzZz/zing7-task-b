@@ -1,3 +1,8 @@
+import Artist1 from './artist1.png'
+import Artist2 from './artist2.png'
+import Artist3 from './artist3.png'
+import Artist4 from './artist4.png'
+
 export const scheduleData = [
   {
     date: '1 ден (11.03.20)',
@@ -49,5 +54,24 @@ export const tableData = [
   {
     accomodation: 'Дете 6 -11.99 г. в стая с 2-ма възрастни',
     price: 728,
+  },
+]
+
+export const artistsData =[
+  {
+    name:'Fat Joe',
+    image: Artist1
+  },
+  {
+    name:'Eminem',
+    image: Artist2
+  },
+  {
+    name:'50 cent',
+    image: Artist3
+  },
+  {
+    name:'Jay-Z',
+    image: Artist4
   },
 ]

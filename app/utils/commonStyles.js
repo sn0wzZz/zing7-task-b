@@ -1,0 +1,1 @@
+export const imageHover='hover:scale-105 hover:shadow-2xl hover:cursor-pointer transition-all duration-200 ease-linear '

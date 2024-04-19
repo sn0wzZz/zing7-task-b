@@ -3,6 +3,7 @@ import Heading from '@/app/ui/Heading'
 import React from 'react'
 import Gallery from './Gallery'
 import Prices from './Prices'
+import Artists from './Artists'
 
 export default function Main({gridProps}:any) {
   return (
@@ -28,6 +29,7 @@ export default function Main({gridProps}:any) {
 
       <Gallery />
       <Prices />
+      <Artists />
     </Container>
   )
 }
