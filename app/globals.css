@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,17 +19,55 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; */
 }
+
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  *{
+    @apply font-Montserrat
+  }
+  h1{
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl
+  }
+  h2{
+    @apply text-5xl
+  }
+  h3{
+    @apply  text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl
+  }
+  h4{
+    @apply text-lg sm:text-xl md:text-lg lg:text-xl xl:text-2xl
+  }
+  h5{
+    @apply text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl
+  }
+  h6{
+    @apply text-lg font-thin
+  }
+  p{
+    @apply text-xl text-start
+  }
+
+  th{
+    @apply bg-tableHead text-start
+  }
+  td,th{
+    @apply p-3
+  }
+  td:last-child,th:last-child{
+    @apply p-3 border-l-8 border-white
+  }
+  
+  table{
+    @apply w-full
   }
 }
