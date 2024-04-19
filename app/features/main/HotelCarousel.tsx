@@ -16,7 +16,7 @@ export default function HotelCarousel({ hotel }: any) {
       perView:
         (width < 400 && 2.2) ||
         (width > 400 && width < 1460 && 3.2) ||
-        (width > 1460 && width < 2050 && 4.2) ||
+        (width > 1460 && width < 2050 && 3.2) ||
         (width > 2050 && 5.2),
       spacing: 5,
     },
@@ -42,7 +42,7 @@ export default function HotelCarousel({ hotel }: any) {
         <div ref={sliderRef} className='keen-slider'>
           {hotel.images.map((image: any, i: any) => (
             <div className={`keen-slider__slide number-slide${i + 1}`} key={i}>
-              <Image src={image} alt='image' />
+              <Image className='w-full h-full' src={image} alt='image' />
             </div>
           ))}
           {loaded && instanceRef.current && (
