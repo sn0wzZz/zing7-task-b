@@ -30,16 +30,21 @@ export default function Prices() {
     <div>
       <SubHeading>Промо пакети</SubHeading>
       <table>
+        <thead>
         <tr>
           <th>Настаняване</th>
           <th>Цена</th>
         </tr>
+        </thead>
+        <tbody>
+
         {tableData.map((offer, i) => (
           <tr key={i}>
             <td>{offer.accomodation}</td>
             <td className='font-bold'>{formatCurrency(offer.price)}</td>
           </tr>
         ))}
+        </tbody>
       </table>
     </div>
   )

@@ -87,7 +87,7 @@ export default function Hero() {
             text-xl transition-all duration-300 ease-linear
             px-5 py-2  sm:py-3 sm:px-7 md:text-2xl lg:text-3xl xl:text-xl'
               >
-                <h5>Резервирай сега</h5>
+                <h5>Резервирайте сега</h5>
               </a>
               <h6>{`от ${formatCurrency(price)}`}</h6>
             {/* Tabs */}
