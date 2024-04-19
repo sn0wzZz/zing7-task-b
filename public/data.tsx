@@ -3,6 +3,12 @@ import Artist2 from './artist2.png'
 import Artist3 from './artist3.png'
 import Artist4 from './artist4.png'
 
+import Room1 from './room1.png'
+import Room2 from './room2.png'
+import Room3 from './room3.png'
+
+
+
 export const scheduleData = [
   {
     date: '1 ден (11.03.20)',
@@ -33,7 +39,6 @@ export const scheduleData = [
   },
 ]
 
-
 export const tableData = [
   {
     accomodation: '1 човек в двойна стая	',
@@ -57,21 +62,52 @@ export const tableData = [
   },
 ]
 
-export const artistsData =[
+export const artistsData = [
   {
-    name:'Fat Joe',
-    image: Artist1
+    name: 'Fat Joe',
+    image: Artist1,
   },
   {
-    name:'Eminem',
-    image: Artist2
+    name: 'Eminem',
+    image: Artist2,
   },
   {
-    name:'50 cent',
-    image: Artist3
+    name: '50 cent',
+    image: Artist3,
   },
   {
-    name:'Jay-Z',
-    image: Artist4
+    name: 'Jay-Z',
+    image: Artist4,
+  },
+]
+
+export const hotelsData = [
+  {
+    name: 'Grand Halic 4****',
+    description: `Grand Hotel Halic предлага удобно местоположение в централния район Beyoglu и изглед към залива Златния рог. На пешеходно разстояние се намират площад „Таксим“ и кулата Галата. На място има закрит плувен басейн и СПА център.
+    \n\n
+    Хотелът предлага добре обзаведени стаи за гости и суити с кът за сядане и плоскоекранен телевизор със сателитни канали. Всяко помещение за настаняване има отопление и климатик, както и безплатен WiFi достъп.`,
+    images:[
+      Room1,
+      Room2,
+      Room3,
+      Room1,
+      Room2,
+      Room3,
+    ]
+  },
+  {
+    name: 'Grand Halic 4****',
+    description: `Grand Hotel Halic предлага удобно местоположение в централния район Beyoglu и изглед към залива Златния рог. На пешеходно разстояние се намират площад „Таксим“ и кулата Галата. На място има закрит плувен басейн и СПА център.
+    \n\n
+     Хотелът предлага добре обзаведени стаи за гости и суити с кът за сядане и плоскоекранен телевизор със сателитни канали. Всяко помещение за настаняване има отопление и климатик, както и безплатен WiFi достъп.`,
+    images:[
+      Room1,
+      Room2,
+      Room3,
+      Room1,
+      Room2,
+      Room3,
+    ]
   },
 ]

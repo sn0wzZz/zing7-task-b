@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Heading({children}:any) {
+export default function Heading({children, quickFix}:any) {
   return (
-    <h2 className='mb-10 font-bold'>{children}</h2>
+    <h2 className={`font-bold ${quickFix}`}>{children}</h2>
   )
 }

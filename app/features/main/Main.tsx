@@ -4,11 +4,12 @@ import React from 'react'
 import Gallery from './Gallery'
 import Prices from './Prices'
 import Artists from './Artists'
+import Hotels from './Hotels'
 
 export default function Main({gridProps}:any) {
   return (
     <Container gridProps={gridProps}>
-      <Heading>За събитието</Heading>
+      <Heading quickFix='mb-10'>За събитието</Heading>
       <p>
         Ако ви привлича Изтока и източната култура, със сигурност сте чували за
         Акаба. Курортното градче е разположено в северната част на Червено море,
@@ -30,6 +31,7 @@ export default function Main({gridProps}:any) {
       <Gallery />
       <Prices />
       <Artists />
+      <Hotels />
     </Container>
   )
 }

@@ -23,11 +23,18 @@ const calculateTimeLeft = () => {
       (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
     )
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
-    return { days, hours, minutes }
+
+    // Add leading zero if single digit
+    const formattedHours = hours < 10 ? '0' + hours : hours
+    const formattedMinutes = minutes < 10 ? '0' + minutes : minutes
+
+    return { days, hours: formattedHours, minutes: formattedMinutes }
   } else {
-    return { days: 0, hours: 0, minutes: 0 }
+    return { days: 0, hours: '00', minutes: '00' }
   }
 }
+
+
 const tabs = [
   {
     icon: '',

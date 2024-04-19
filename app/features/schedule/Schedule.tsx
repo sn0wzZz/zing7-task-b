@@ -7,7 +7,7 @@ import Container from '@/app/ui/Container'
 export default function Schedule({ gridProps }: any) {
   return (
     <Container bgColor='bg-bgSecondary' gridProps={gridProps}>
-      <Heading>Програма</Heading>
+      <Heading quickFix='mb-10'>Програма</Heading>
 
       <div className='flex flex-col  gap-8'>
         {scheduleData.map((day, i) => (

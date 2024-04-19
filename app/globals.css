@@ -24,6 +24,31 @@ body {
 
 }
 
+.navigation-wrapper {
+  position: relative;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -38,7 +63,7 @@ body {
     @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl;
   }
   h2 {
-    @apply text-5xl;
+    @apply text-3xl;
   }
   h3 {
     @apply text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl;
@@ -71,4 +96,12 @@ body {
   table {
     @apply w-full;
   }
+
+  .arrow{
+    @apply fill-primary-100
+  }
+  .arrow--disabled {
+  @apply opacity-50
+}
+
 }
