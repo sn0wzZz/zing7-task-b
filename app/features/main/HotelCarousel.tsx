@@ -10,14 +10,20 @@ export default function HotelCarousel({ hotel }: any) {
   const [loaded, setLoaded] = useState(false)
   const { width } = useWindowDimensions()
 
+  const getPerView = () => {
+    if (width < 400) return 1.2
+    if (width > 400 && width < 1460) return 2.2
+    if (width > 1460 && width < 2050) return 3.2
+    if (width > 2050) return 4.2
+    return 1 // Default value
+  }
+
+  const perView = getPerView()
+
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
     slides: {
-      perView:
-        (width < 400 && 1.2) ||
-        (width > 400 && width < 1460 && 2.2) ||
-        (width > 1460 && width < 2050 && 3.2) ||
-        (width > 2050 && 4.2),
+      perView,
       spacing: 5,
     },
     slideChanged(slider) {
@@ -29,7 +35,6 @@ export default function HotelCarousel({ hotel }: any) {
   })
 
   console.log(currentSlide)
-  // console.log(instanceRef.current?.track.details.slides.length)
 
   return (
     <div className='py-5 border-b-2 flex flex-col gap-5'>
