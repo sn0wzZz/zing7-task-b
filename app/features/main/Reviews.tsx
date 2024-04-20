@@ -7,7 +7,7 @@ import DefaultAvatar from '../../../public/default-avatar.jpg'
 export default function Reviews() {
   return (
     <div>
-      <SubHeading>Отзиви от клиенти</SubHeading>
+      <h2 className='font-bold mb-10'>Отзиви от клиенти</h2>
 
       <div className='grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-x-5 gap-y-10'>
         {reviewsData.map(({ name, message, avatar, position }, i) => (
