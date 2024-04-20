@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <div className='grid grid-cols-1 grid-rows-auto md:grid-cols-12'>
-        <Main gridProps='col-start-1 row-start-1 md:row-start-1 xl:col-start-2 col-end-8 md:row-span-auto' />
+        <Main gridProps='col-start-1 row-start-1 md:row-start-1 xl:col-start-1 2xl:col-start-2 col-end-8 md:row-span-auto' />
         <div className='md:col-start-8 md:row-start-1 col-start-1 row-start-3 row-end-2 col-span-12 md:col-span-5'>
           <div className='md:flex-1'>
             <Schedule />

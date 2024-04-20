@@ -15,9 +15,9 @@ export default function Footer({ gridProps }: any) {
       bgColor='bg-heading border-t-2 border-white'
       gridProps={gridProps}
     >
-      <div className='text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
+      <div className='text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-10 gap-3'>
         {/* Column 1 */}
-        <FooterContainer gridProps='md:col-start-1 md:col-span-1 lg:col-span-1'>
+        <FooterContainer gridProps='md:col-start-1 md:col-span-1 lg:col-span-1 2xl:col-start-2 2xl:col-end-4'>
           <div className='flex flex-col items-center'>
             <div className='flex flex-col gap-6 justify-center'>
               <Image src={Logo} alt='logo' width={120} />
@@ -53,7 +53,7 @@ export default function Footer({ gridProps }: any) {
         </FooterContainer>
 
         {/* Column 2 */}
-        <FooterContainer gridProps='md:col-start-2 md:col-span-1 lg:col-span-1'>
+        <FooterContainer gridProps='md:col-start-2 md:col-span-1 lg:col-span-1 2xl:col-start-4 2xl:col-end-6'>
           <div className='flex flex-col items-center '>
             <div className='flex flex-col gap-10'>
               <h5 className='font-bold'>Контакти</h5>
@@ -80,7 +80,7 @@ export default function Footer({ gridProps }: any) {
         </FooterContainer>
 
         {/* Column 3 */}
-        <FooterContainer gridProps='md:col-start-1 md:col-span-1 lg:col-span-1'>
+        <FooterContainer gridProps='md:col-start-1 md:col-span-1 lg:col-span-1 2xl:col-start-6 2xl:col-end-8'>
           <div className='flex flex-col gap-6 items-center'>
             <div className='flex flex-col gap-10'>
               <h5 className='font-bold text-start'>Бързи връзки</h5>
@@ -104,7 +104,7 @@ export default function Footer({ gridProps }: any) {
         </FooterContainer>
 
         {/* Column 4 */}
-        <FooterContainer gridProps='md:col-start-2 md:col-span-1 lg:col-span-1'>
+        <FooterContainer gridProps='md:col-start-2 md:col-span-1 lg:col-span-1 2xl:col-start-8 2xl:col-end-10'>
           <div className='flex flex-col gap-6 items-center'>
             <div className='flex flex-col gap-10'>
               <div className='flex flex-col gap-2'>

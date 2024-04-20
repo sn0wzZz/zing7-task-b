@@ -11,9 +11,9 @@ import { imageHover } from '@/app/utils/commonStyles'
 
 export default function Offers() {
   return (
-    <div className='col-start-1 col-end-11 xs:col-end-13 lg:col-start-2 lg:col-end-12 '>
+    <div className='pt-16 col-start-1 col-end-11 xs:col-end-13 lg:col-start-1 lg:col-end-13   2xl:col-start-2 2xl:col-end-12  '>
       <Heading quickFix='mb-10'>Още предложения</Heading>
-      <div className='grid grid-cols-1 xs:grid-cols-2 tablet:grid-cols-3 2xl:grid-cols-4 gap-5'>
+      <div className='grid grid-cols-1 xs:grid-cols-2 tablet:grid-cols-4 2xl:grid-cols-4 gap-5'>
         {offersData.map(
           (
             {
@@ -34,7 +34,9 @@ export default function Offers() {
                 <h5>{name}</h5>
                 <div className='py-5 flex justify-start'>
                   <div className='flex flex-col justify-end'>
-                    <h5 className='text-primary-100'>{formatCurrency(price)}</h5>
+                    <h5 className='text-primary-100'>
+                      {formatCurrency(price)}
+                    </h5>
                     <h6 className='line-through font-normal'>
                       {formatCurrency(previousPrice)}
                     </h6>

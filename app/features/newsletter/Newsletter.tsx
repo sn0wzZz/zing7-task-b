@@ -13,36 +13,33 @@ export default function Newsletter({ gridProps }: any) {
   return (
     <Container
       as='footer'
-      bgColor='bg-heading border-t-2 border-white flex justify-center items-center'
+      bgColor='bg-heading border-t-2 border-white'
       gridProps={gridProps}
     >
-      <div className='flex items-center flex-col lg:flex-row gap-x-10'>
-        <div>
+      <div className='grid grid-cols-1 lg:grid-cols-10'>
+        <div className=' lg:col-start-1 lg:col-end-6 xl:col-start-2 xl:col-end-6 flex items-center justify-center lg:justify-start'>
           <h2 className='font-bold text-white text-center lg:text-start'>
             Отстъпки и специални предложения налични само на имейл
           </h2>
         </div>
-        <div>
-          <div className=' my-16 flex flex-nowrap justify-center items-center lg:text-start'>
+        <div className=' lg:col-star-5  lg:col-end-8  xl:col-star-6  xl:col-end-8 '>
+          <div className='my-16 flex flex-nowrap justify-center lg:justify-normal  items-center lg:text-start '>
             <div>
               <div className='flex items-center justify-center'>
                 <div className='flex items-center justify-center bg-white pl-3 xl:pl-5'>
                   <FiMail color='grey' size={20} />
                   <input
-                    className='p-3 w-[10rem] lg:w-[30vw] xl:p-3 xl:text-xl outline-none border-none bg bg-transparent'
+                    className='p-3 max-w-[7rem] md:max-w-full xl:p-3 xl:text-xl outline-none border-none bg bg-transparent'
                     type='text'
-                    placeholder='Имейл адрес'
+                    placeholder='Имейл'
                   />
                 </div>
-                <button
-                  onClick={notify}
-                  className='p-3 xl:p-3 text-white xl:px-10 bg-primary-100 hover:bg-primary-200 xl:text-xl border-0 font-bold max-w text-nowrap'
-                >
+                <button onClick={notify} className='sharp-button'>
                   Абонирай се
                 </button>
               </div>
 
-              <h6 className='text-white pt-4 text-center xl:text-start'>
+              <h6 className='text-white pt-4 text-center lg:text-start'>
                 Всеки месец ще получаваш първи най-добрите ни оферти
               </h6>
             </div>

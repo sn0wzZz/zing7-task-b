@@ -74,15 +74,15 @@ body {
     /* @apply text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl; */
   }
   h6 {
-    @apply font-light text-xl ;
+    @apply font-light text-xl;
     /* @apply text-lg font-light; */
   }
   p {
     @apply text-lg text-start;
   }
 
-  a{
-    @apply hover:underline hover:cursor-pointer
+  a {
+    @apply hover:underline hover:cursor-pointer;
   }
 
   th {
@@ -101,8 +101,22 @@ body {
     @apply w-full;
   }
 
-  button{
-    @apply transition-all duration-300 ease-linear
+  button {
+    @apply transition-all duration-300 ease-linear;
+  }
+
+  .round-button {
+    @apply bg-primary-100 hover:bg-primary-200 hover:cursor-pointer  rounded-full font-bold text-xl 
+            px-5 py-2  sm:py-3 sm:px-7 md:text-xl lg:text-xl xl:text-lg;
+  }
+  .sharp-button {
+    @apply bg-primary-100 hover:bg-primary-200 hover:cursor-pointer text-xl 
+            px-5 py-3  sm:py-3 sm:px-7 md:text-xl lg:text-xl xl:text-lg text-nowrap w-max text-white;
+  }
+
+
+  button > a {
+    @apply no-underline;
   }
 
   .arrow {

@@ -34,7 +34,6 @@ const calculateTimeLeft = () => {
   }
 }
 
-
 const tabs = [
   {
     icon: '',
@@ -89,15 +88,10 @@ export default function Hero() {
             {/* Button */}
 
             <div className='flex flex-col justify-center items-center gap-2'>
-              <a
-                href='#'
-                className='bg-primary-100 hover:bg-primary-200 hover:cursor-pointer  rounded-full font-bold
-            text-xl transition-all duration-300 ease-linear
-            px-5 py-2  sm:py-3 sm:px-7 md:text-2xl lg:text-3xl xl:text-xl'
-              >
-                <h5>Резервирайте сега</h5>
-              </a>
-              <h6 className='max-w text-nowrap'>{`от ${formatCurrency(price)}`}</h6>
+              <button className='round-button'>Резервирайте сега</button>
+              <h6 className='max-w text-nowrap'>{`от ${formatCurrency(
+                price
+              )}`}</h6>
               {/* Tabs */}
               <div className='grid grid-cols-2 md:grid-cols-4  gap-2 mt-6'>
                 {tabs.map((tab, i) => (
