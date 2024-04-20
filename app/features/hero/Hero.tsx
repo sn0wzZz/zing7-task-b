@@ -27,10 +27,11 @@ const calculateTimeLeft = () => {
     // Add leading zero if single digit
     const formattedHours = hours < 10 ? '0' + hours : hours
     const formattedMinutes = minutes < 10 ? '0' + minutes : minutes
+    const formattedDays = days < 10 ? '0' + days : days
 
-    return { days, hours: formattedHours, minutes: formattedMinutes }
+    return { formattedDays, hours: formattedHours, minutes: formattedMinutes }
   } else {
-    return { days: 0, hours: '00', minutes: '00' }
+    return { days: '00', hours: '00', minutes: '00' }
   }
 }
 
