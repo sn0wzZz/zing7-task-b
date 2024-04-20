@@ -81,6 +81,10 @@ body {
     @apply text-lg text-start;
   }
 
+  a{
+    @apply hover:underline hover:cursor-pointer
+  }
+
   th {
     @apply bg-tableHead text-textSecondary text-start;
   }
@@ -95,6 +99,10 @@ body {
 
   table {
     @apply w-full;
+  }
+
+  button{
+    @apply transition-all duration-300 ease-linear
   }
 
   .arrow {

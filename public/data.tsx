@@ -9,9 +9,19 @@ import Room3 from './room3.png'
 
 import Avatar1 from './avatar1.png'
 
+import Offer1 from './offer1.png'
+import Offer2 from './offer2.png'
 
-
-
+import Logo1 from './logo1.png'
+import Logo2 from './logo2.png'
+import Logo3 from './logo3.png'
+import Logo4 from './logo4.png'
+import Logo5 from './logo5.png'
+import Logo6 from './logo6.png'
+import Logo7 from './logo7.png'
+import Logo8 from './logo8.png'
+import Logo9 from './logo9.png'
+import Logo10 from './logo10.png'
 
 export const scheduleData = [
   {
@@ -91,28 +101,14 @@ export const hotelsData = [
     description: `Grand Hotel Halic предлага удобно местоположение в централния район Beyoglu и изглед към залива Златния рог. На пешеходно разстояние се намират площад „Таксим“ и кулата Галата. На място има закрит плувен басейн и СПА център.
     \n\n
     Хотелът предлага добре обзаведени стаи за гости и суити с кът за сядане и плоскоекранен телевизор със сателитни канали. Всяко помещение за настаняване има отопление и климатик, както и безплатен WiFi достъп.`,
-    images:[
-      Room1,
-      Room2,
-      Room3,
-      Room1,
-      Room2,
-      Room3,
-    ]
+    images: [Room1, Room2, Room3, Room1, Room2, Room3],
   },
   {
     name: 'Grand Halic 4****',
     description: `Grand Hotel Halic предлага удобно местоположение в централния район Beyoglu и изглед към залива Златния рог. На пешеходно разстояние се намират площад „Таксим“ и кулата Галата. На място има закрит плувен басейн и СПА център.
     \n\n
      Хотелът предлага добре обзаведени стаи за гости и суити с кът за сядане и плоскоекранен телевизор със сателитни канали. Всяко помещение за настаняване има отопление и климатик, както и безплатен WiFi достъп.`,
-    images:[
-      Room1,
-      Room2,
-      Room3,
-      Room1,
-      Room2,
-      Room3,
-    ]
+    images: [Room1, Room2, Room3, Room1, Room2, Room3],
   },
 ]
 
@@ -145,4 +141,64 @@ export const reviewsData = [
     message:
       'A visual guide could be a wireframe, creative composition, or information architecture.',
   },
+]
+
+export const offersData = [
+  {
+    name: 'Ски в Алпите в курорта Иглс, Австрия хотел Bon Alpina 3*',
+    price: 336,
+    previousPrice: 689,
+    poster: Offer1,
+    tags: {
+      nights: 8,
+      transport: 'самолет',
+      location: 'австрия',
+    },
+  },
+  {
+    name: 'Ски в Алпите в курорта Иглс, Австрия хотел Bon Alpina 3*',
+    price: 336,
+    previousPrice: 689,
+    poster: Offer2,
+    tags: {
+      nights: 8,
+      transport: 'круиз',
+      location: 'австрия',
+    },
+  },
+  {
+    name: 'Ски в Алпите в курорта Иглс, Австрия хотел Bon Alpina 3*',
+    price: 336,
+    previousPrice: 689,
+    poster: Offer1,
+    tags: {
+      nights: 8,
+      transport: 'автобус',
+      location: 'австрия',
+    },
+  },
+  {
+    name: 'Ски в Алпите в курорта Иглс, Австрия хотел Bon Alpina 3*',
+    price: 336,
+    poster: Offer2,
+    previousPrice: 689,
+    tags: {
+      nights: 8,
+      transport: 'самолет',
+      location: 'австрия',
+    },
+  },
+]
+
+export const logosData = [
+  Logo1,
+  Logo2,
+  Logo3,
+  Logo4,
+  Logo5,
+  Logo6,
+  Logo7,
+  Logo8,
+  Logo9,
+  Logo10,
 ]

@@ -3,7 +3,7 @@ import { IoTodayOutline } from 'react-icons/io5'
 
 export default function Day({ day: { date, title, description } }: any) {
   return (
-    <div className='max-w-[500px]'>
+    <div className='md:max-w-[400px] xl:max-w-[500px]'>
       <div className='flex gap-2 '>
         <IoTodayOutline size={50} className='text-primary-100' />
         <div className='flex flex-col gap-1'>

@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import Logo from '../../../public/Group 3.png'
+import Logo from '../../../public/brand.png'
 import Image from 'next/image'
 import useWindowDimensions from '../../utils/useWindowDimensions'
 

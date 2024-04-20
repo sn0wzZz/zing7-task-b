@@ -33,7 +33,9 @@ const config: Config = {
         textSecondary: '#b4b4b4',
       },
       screens: {
-        tablet: '1101px',
+        tablet: '1020px',
+        tabletXl: '1280px',
+
         xs: '450px',
       },
     },
