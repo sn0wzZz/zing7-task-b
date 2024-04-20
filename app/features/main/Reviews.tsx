@@ -14,7 +14,7 @@ export default function Reviews() {
           <div className='flex flex-col gap-1' key={i}>
             <div className='flex flex-col flex-grow '>
               <p className='bg-tableHead rounded-2xl p-5 flex-grow'>{message}</p>
-              <div className='w-0 h-0 mx-6 border-tableHead -z-10 -translate-y-4 border-b-[30px] border-r-[30px] rotate-45'></div>
+              <div className='w-0 h-0 mx-4 border-tableHead -z-10 -translate-y-4 border-b-[30px] border-r-[30px] rotate-45'></div>
             </div>
             <div className='flex items-center gap-3 '>
               <Image
