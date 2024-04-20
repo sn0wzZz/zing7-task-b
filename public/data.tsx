@@ -7,6 +7,10 @@ import Room1 from './room1.png'
 import Room2 from './room2.png'
 import Room3 from './room3.png'
 
+import Avatar1 from './avatar1.png'
+
+
+
 
 
 export const scheduleData = [
@@ -109,5 +113,36 @@ export const hotelsData = [
       Room2,
       Room3,
     ]
+  },
+]
+
+export const reviewsData = [
+  {
+    name: 'John Johnson',
+    position: 'Co-founder of Forpeople',
+    avatar: '',
+    message:
+      'A visual guide could be a wireframe, creative composition, or information architecture. A device that enables collaboration will lessen the chance of work having to be completely redone.',
+  },
+  {
+    name: 'Cha Ji-Hun',
+    position: 'Co-founder of Forpeople',
+    avatar: Avatar1,
+    message:
+      'A visual guide could be a wireframe, creative composition, or information architecture.',
+  },
+  {
+    name: 'Cha Ji-Hun',
+    position: 'Co-founder of Forpeople',
+    avatar: '',
+    message:
+      'A visual guide could be a wireframe, creative composition, or information architecture. A device that enables collaboration will lessen the chance of work having to be completely redone.',
+  },
+  {
+    name: 'John Johnson',
+    position: 'Co-founder of Forpeople',
+    avatar: Avatar1,
+    message:
+      'A visual guide could be a wireframe, creative composition, or information architecture.',
   },
 ]

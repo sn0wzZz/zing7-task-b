@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import useWindowDimensions from '@/app/utils/useWindowDimensions'
+import SubHeading from '@/app/ui/SubHeading'
 
 export default function HotelCarousel({ hotel }: any) {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -38,7 +39,7 @@ export default function HotelCarousel({ hotel }: any) {
     <div className='py-5 border-b-2 flex flex-col gap-5'>
       <div className='flex items-center mb-6 gap-3'>
         <HiOutlineBuildingOffice className='text-primary-100' size={50} />
-        <h3 className='m-0'>{hotel.name}</h3>
+        <h2 className='m-0 font-bold'>{hotel.name}</h2>
       </div>
       <p>{hotel.description}</p>
 

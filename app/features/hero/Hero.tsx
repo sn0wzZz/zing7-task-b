@@ -66,7 +66,7 @@ export default function Hero() {
   })
 
   return (
-    <div
+    <header
       className={`relative bg-[url('/hero.png')] bg-center bg-cover text-center `}
     >
       <div className='w-full h-full flex  justify-center items-center backdrop-blur-md'>
@@ -97,9 +97,9 @@ export default function Hero() {
               >
                 <h5>Резервирайте сега</h5>
               </a>
-              <h6>{`от ${formatCurrency(price)}`}</h6>
+              <h6 className='max-w text-nowrap'>{`от ${formatCurrency(price)}`}</h6>
               {/* Tabs */}
-              <div className='grid grid-cols-2 sm:grid-cols-4  gap-2 mt-6'>
+              <div className='grid grid-cols-2 md:grid-cols-4  gap-2 mt-6'>
                 {tabs.map((tab, i) => (
                   <Tab key={i} tab={tab} />
                 ))}
@@ -108,6 +108,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   )
 }

@@ -5,6 +5,7 @@ import Gallery from './Gallery'
 import Prices from './Prices'
 import Artists from './Artists'
 import Hotels from './Hotels'
+import Reviews from './Reviews'
 
 export default function Main({gridProps}:any) {
   return (
@@ -32,6 +33,7 @@ export default function Main({gridProps}:any) {
       <Prices />
       <Artists />
       <Hotels />
+      <Reviews />
     </Container>
   )
 }

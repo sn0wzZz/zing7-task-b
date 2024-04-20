@@ -9,7 +9,7 @@ export default function Artists() {
   return (
     <div>
       <SubHeading>Изпълнители</SubHeading>
-      <div className='grid gap-4 grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-3  lg:grid-cols-4'>
+      <div className='grid gap-4 grid-cols-2 xs:grid-cols-4'>
         {artistsData.map((artist, i) => (
           <div className={`flex flex-col justify-center items-center ${imageHover}`} key={i}>
             <Image
