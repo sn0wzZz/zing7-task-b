@@ -29,7 +29,7 @@ const calculateTimeLeft = () => {
     const formattedMinutes = minutes < 10 ? '0' + minutes : minutes
     const formattedDays = days < 10 ? '0' + days : days
 
-    return { formattedDays, hours: formattedHours, minutes: formattedMinutes }
+    return { days: formattedDays, hours: formattedHours, minutes: formattedMinutes }
   } else {
     return { days: '00', hours: '00', minutes: '00' }
   }
