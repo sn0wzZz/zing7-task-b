@@ -1,4 +1,4 @@
-import { capitalizeFirstLetter } from '@/app/utils/helpers'
+import { capitalizeFirstLetter, formatCurrency } from '@/app/utils/helpers'
 import { offersData } from '@/public/data'
 import Image from 'next/image'
 import { BsAirplaneEngines } from 'react-icons/bs'
@@ -25,15 +25,18 @@ export default function Offers() {
             },
             i
           ) => (
-            <div className={`flex flex-col items-center shadow-lg ${imageHover}`} key={i}>
+            <div
+              className={`flex flex-col items-center shadow-lg ${imageHover}`}
+              key={i}
+            >
               <Image className='w-full' src={poster} alt={name} />
               <div className=' bg-white p-5 '>
                 <h5>{name}</h5>
                 <div className='py-5 flex justify-start'>
                   <div className='flex flex-col justify-end'>
-                    <h5 className='text-primary-100'>{price}</h5>
+                    <h5 className='text-primary-100'>{formatCurrency(price)}</h5>
                     <h6 className='line-through font-normal'>
-                      {previousPrice}
+                      {formatCurrency(previousPrice)}
                     </h6>
                   </div>
                   <div className='ml-auto text-textSecondary'>
