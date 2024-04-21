@@ -118,6 +118,15 @@ export default function Footer({ gridProps }: any) {
             </div>
           </div>
         </FooterContainer>
+
+        <FooterContainer gridProps='col-start-1 col-end-1 2xl:col-start-2 2xl:col-end-4 flex items-center 2xl:items-start '>
+          <div>
+
+          <h6 className='text-textSecondary'>
+            All rights reserved.br <br />© 2020 Mistral
+          </h6>
+          </div>
+        </FooterContainer>
       </div>
     </Container>
   )
