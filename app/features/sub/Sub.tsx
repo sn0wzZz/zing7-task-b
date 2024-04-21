@@ -6,7 +6,7 @@ import Partners from './Partners'
 export default function Sub({ gridProps }: any) {
   return (
     <Container bgColor='bg-bgSecondary' gridProps={gridProps}>
-      <div className='grid grid-cols-12 sm:gap-x-10  md:gap-y-20  lg:gap-y-36 '>
+      <div className='grid grid-cols-12 gap-y-10  sm:gap-x-10  md:gap-y-20  lg:gap-y-36 '>
         <Offers />
         <Partners />
       </div>
