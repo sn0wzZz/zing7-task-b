@@ -45,6 +45,7 @@ body {
   right: 5px;
 }
 
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -124,5 +125,11 @@ body {
   }
   .arrow--disabled {
     @apply opacity-50;
+  }
+
+
+
+  ul{
+    @apply transition-all duration-300 ease-linear
   }
 }
