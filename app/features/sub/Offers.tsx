@@ -15,7 +15,7 @@ export default function Offers() {
       <Heading quickFix='mb-10'>Още предложения</Heading>
 
       <div className='flex flex-col items-center w-full'>
-      <div className='grid grid-cols-1 sm:grid-cols-2 tablet:grid-cols-3 2xl:grid-cols-4 gap-10'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 tabletXl:grid-cols-4 2xl:grid-cols-4 gap-10'>
         {offersData.map(
           (
             {
