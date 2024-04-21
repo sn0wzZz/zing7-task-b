@@ -69,7 +69,11 @@ export default function HotelCarousel({ hotel }: any) {
                 disabled={
                   currentSlide ===
                     instanceRef.current.track.details.slides.length - 1 ||
-                  currentSlide === 3
+                  (width &&
+                    ((width < 400 && currentSlide === 6) ||
+                      (width > 400 && width < 1460 && currentSlide === 4) ||
+                      (width > 1460 && width < 2050 && currentSlide === 3) ||
+                      (width > 2050 && currentSlide === 3)))
                 }
               />
             </>
