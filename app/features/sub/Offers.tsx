@@ -11,9 +11,11 @@ import { imageHover } from '@/app/utils/commonStyles'
 
 export default function Offers() {
   return (
-    <div className='pt-16 col-start-1 col-end-11 xs:col-end-13 lg:col-start-1 lg:col-end-13   2xl:col-start-2 2xl:col-end-12  '>
+    <div className='pt-16 col-start-1 col-end-13 xs:col-end-13 lg:col-start-1 lg:col-end-13   2xl:col-start-2 2xl:col-end-12  '>
       <Heading quickFix='mb-10'>Още предложения</Heading>
-      <div className='grid grid-cols-1 xs:grid-cols-2 tablet:grid-cols-4 2xl:grid-cols-4 gap-5'>
+
+      <div className='flex flex-col items-center w-full'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 tablet:grid-cols-3 2xl:grid-cols-4 gap-10'>
         {offersData.map(
           (
             {
@@ -29,6 +31,8 @@ export default function Offers() {
               className={`flex flex-col items-center shadow-lg ${imageHover}`}
               key={i}
             >
+              <div>
+
               <Image className='w-full' src={poster} alt={name} />
               <div className=' bg-white p-5 '>
                 <h5>{name}</h5>
@@ -61,10 +65,12 @@ export default function Offers() {
                   </div>
                 </div>
               </div>
+                        </div>
             </div>
           )
         )}
       </div>
+        </div>
     </div>
   )
 }

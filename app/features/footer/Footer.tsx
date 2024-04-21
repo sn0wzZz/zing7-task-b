@@ -27,7 +27,7 @@ export default function Footer({ gridProps }: any) {
                     src={License}
                     alt='logo'
                     width={100}
-                    className='w-[30%]'
+                    className='sm:w-[30%]'
                   />
                   <h5>
                     Лиценз, удостоверение за <br />
@@ -39,7 +39,7 @@ export default function Footer({ gridProps }: any) {
                     src={Insurance}
                     alt='logo'
                     width={100}
-                    className='w-[30%]'
+                    className='sm:w-[30%]'
                   />
                   <h5>
                     <h5>

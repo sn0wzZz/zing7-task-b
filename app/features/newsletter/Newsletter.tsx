@@ -22,7 +22,7 @@ export default function Newsletter({ gridProps }: any) {
             Отстъпки и специални предложения налични само на имейл
           </h2>
         </div>
-        <div className=' lg:col-star-5  lg:col-end-8  xl:col-star-6  xl:col-end-8 '>
+        <div className=' lg:col-star-5  lg:col-end-7  xl:col-star-5  xl:col-end-8 '>
           <div className='my-16 flex flex-nowrap justify-center lg:justify-normal  items-center lg:text-start '>
             <div>
               <div className='flex items-center justify-center'>
