@@ -79,7 +79,7 @@ body {
     /* @apply text-lg font-light; */
   }
   p {
-    @apply text-lg text-start;
+    @apply text-base md:text-lg text-start;
   }
 
   a {
