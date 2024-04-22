@@ -109,11 +109,11 @@ export default function Footer({ gridProps }: any) {
             <div className='flex flex-col gap-10'>
               <div className='flex flex-col gap-2'>
                 <p>120k ни харесват във</p>
-                <FaFacebook size={40} className='mx-20' />
+                <FaFacebook size={40} className='mx-16 md:mx-20' />
               </div>
               <div className='flex flex-col gap-2'>
                 <p>60k ни харесват във</p>
-                <FaInstagram size={40} className='mx-20' />
+                <FaInstagram size={40} className='mx-16 md:mx-20' />
               </div>
             </div>
           </div>
